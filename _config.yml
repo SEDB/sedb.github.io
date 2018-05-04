@@ -172,13 +172,7 @@ collections:
   tools:
     output: true
     permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
+  datasets:
     output: true
     permalink: /:collection/:path/
 
@@ -211,33 +205,16 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
-  # _publications
+      comments: true  
+  # _datasets
   - scope:
       path: ""
-      type: publications
+      type: datasets
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 # Sass/SCSS
 sass:
